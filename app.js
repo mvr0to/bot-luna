@@ -118,8 +118,8 @@ const ZDGConnection = async () => {
       const msg = messages[0]
       const jid = msg.key.remoteJid
 //  
-if (!msg.key.fromMe && jid !== 'status@broadcast' && !ZDGGroupCheck(jid)) {
-   const options = {
+    if (!msg.key.fromMe && jid !== 'status@broadcast' && !ZDGGroupCheck(jid)) {
+    const options = {
        'method': 'POST',
        'url': 'https://netfrix-clone.bubbleapps.io/api/1.1/wf/teste-1',
        'headers': {
@@ -155,32 +155,12 @@ if (!msg.key.fromMe && jid !== 'status@broadcast' && !ZDGGroupCheck(jid)) {
        console.log(response.body);
       }
     });	
-         }
-
-         if (!msg.key.fromMe && jid !== 'status@broadcast' && !ZDGGroupCheck(jid)) {
-           const options = {
-               'method': 'POST',
-               'url': 'https://netfrix-clone.bubbleapps.io/api/1.1/wf/teste-1',
-               'headers': {
-                 'Content-Type': 'application/json'
-               },
-               json: msg
-             };
-      
-            request(options, function (error, response) {
-              if (error) {
-                 throw new Error(error);
-               }
-               else {
-                console.log(response.body);
-              }
-             });	
-         }
+      }
 
          if (!msg.key.fromMe && jid !== 'status@broadcast' && !ZDGGroupCheck(jid)) {
             const options = {
               'method': 'POST',
-              'url': 'https://netfrix-clone.bubbleapps.io/version-test/api/1.1/wf/teste3',
+              'url': 'https://netfrix-clone.bubbleapps.io/api/1.1/wf/teste3',
                'headers': {
                  'Content-Type': 'application/json'
               },
